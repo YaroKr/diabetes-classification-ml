@@ -19,7 +19,7 @@ print(f"Optuna: {optuna.__version__}")
 
 # Test dataset loading
 try:
-    df = pd.read_csv('data/CDC_Diabetes_Dataset.csv')
+    df = pd.read_csv('C:\\Users\\yaros\\Desktop\\python\\faidm\\individual_project\\diabetes-classification-ml\\data\\CDC Diabetes Dataset.csv')
     print(f"\n✅ Dataset loaded successfully!")
     print(f"Shape: {df.shape}")
     print(f"Columns: {df.columns.tolist()}")
