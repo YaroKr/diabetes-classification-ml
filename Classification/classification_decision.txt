@@ -1,0 +1,3 @@
+Decision: BINARY
+Reason: Prediabetes recall (0.2%) is too low to be clinically useful
+Target: y_binary = (y == 2).astype(int)
