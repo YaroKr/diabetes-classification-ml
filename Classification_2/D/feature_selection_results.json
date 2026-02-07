@@ -1,0 +1,54 @@
+{
+  "n_features_before": 18,
+  "n_features_after": 16,
+  "n_features_removed": 2,
+  "selected_features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "MentHlth",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "removed_features": [
+    "AnyHealthcare",
+    "NoDocbcCost"
+  ],
+  "performance_before": {
+    "recall": 0.7959723096286972,
+    "precision": 0.31667501251877817,
+    "f1": 0.4530897367006986,
+    "roc_auc": 0.7951710986302427
+  },
+  "performance_after": {
+    "recall": 0.7972309628697294,
+    "precision": 0.3176370292362469,
+    "f1": 0.4542781323961845,
+    "roc_auc": 0.7951156327235802
+  },
+  "improvement": {
+    "recall": 0.0012586532410321372,
+    "precision": 0.000962016717468761,
+    "f1": 0.0011883956954858999,
+    "roc_auc": -5.546590666249962e-05
+  },
+  "business_impact": {
+    "features_removed": [
+      "AnyHealthcare",
+      "NoDocbcCost"
+    ],
+    "reasoning": "Removed redundant/noisy features while maintaining performance",
+    "cost_impact": "Neutral - same recall and precision as Phase 3",
+    "model_complexity": "Reduced by 11% (18 \u2192 16 features)"
+  }
+}

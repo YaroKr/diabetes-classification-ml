@@ -1,0 +1,26 @@
+{
+  "model": "CatBoost",
+  "sampling_strategy": "SMOTE",
+  "recall": 0.7959723096286972,
+  "precision": 0.31667501251877817,
+  "f1": 0.4530897367006986,
+  "roc_auc": 0.7951710986302427,
+  "confusion_matrix": {
+    "TP": 6324,
+    "FP": 13646,
+    "TN": 24366,
+    "FN": 1621
+  },
+  "phase1_baseline": 0.21,
+  "phase2_baseline": 0.734,
+  "phase3_final": 0.7959723096286972,
+  "total_improvement": 0.5859723096286973,
+  "business_justification": {
+    "use_case": "First-line diabetes screening",
+    "target_recall": "70-80%",
+    "achieved_recall": "79.6%",
+    "precision_acceptable": true,
+    "cost_effective": true,
+    "probability_scores": "Available via predict_proba()"
+  }
+}
