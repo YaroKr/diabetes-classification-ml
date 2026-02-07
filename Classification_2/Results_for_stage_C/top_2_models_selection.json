@@ -1,0 +1,24 @@
+{
+  "top_2_models": [
+    "AdaBoost",
+    "CatBoost"
+  ],
+  "winner": {
+    "name": "AdaBoost",
+    "recall_mean": 0.764,
+    "recall_std": 0.003,
+    "precision": 0.29,
+    "f1": 0.42,
+    "roc_auc": 0.737
+  },
+  "runner_up": {
+    "name": "CatBoost",
+    "recall_mean": 0.75,
+    "recall_std": 0.003,
+    "precision": 0.333,
+    "f1": 0.461,
+    "roc_auc": 0.789
+  },
+  "baseline_recall": 0.21,
+  "winner_improvement": 0.554
+}

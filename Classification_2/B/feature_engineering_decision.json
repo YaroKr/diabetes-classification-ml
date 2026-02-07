@@ -1,0 +1,30 @@
+{
+  "decision": "SET_A",
+  "feature_count": 18,
+  "feature_names": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "MentHlth",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "set_A_recall": 0.20981749528005034,
+  "set_B_recall": 0.2105726872246696,
+  "recall_improvement": 0.0007551919446192601,
+  "set_A_roc_auc": 0.7334292234700222,
+  "set_B_roc_auc": 0.7309108093916485,
+  "baseline_recall": 0.20981749528005034
+}
