@@ -1,0 +1,20 @@
+# EDA - discuss what we want to do - based on this we work out model (multiiclass or binary)
+#
+#
+# General instruction
+# select model (model selection, based on the dataset through baseline [createe baseline model based on data (outliers in data?/etc)]. [do optuna after?] check which model without optimisation perform bests. select 2 of models and then check best samplings with those models. then select best pair of model + sampling. then do in the similar matter the features selection for 2 models and their samples. then compare which model + sample + feature are working best). then we choose the best model in combination and train it
+#
+# 
+#
+# 0) model selection (try baseline model + feature engineering model = explain if no difference that no sense to use feature engineering. 
+# 1) sampling selection 
+# 2) feature selection
+# 3) train optimal model [possibly going back to 1 and go like this in iterations ]
+# 4) explain the results 
+# 5) permutation (and then go back to feature selection) (maybe shap?)
+# 6) get better results
+#
+# *don't use svm, it takes too long 
+#
+# random forest, xgboost, adaboost (checkout), catboost (maybe)
+#
