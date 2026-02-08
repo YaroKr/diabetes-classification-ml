@@ -1,0 +1,72 @@
+{
+  "selected_model": "Optuna (538 iterations)",
+  "selection_reason": "Best balance of recall (78.7%) and precision (32.1%). Hybrid rejected due to excessive false alarms (25.4% precision).",
+  "model_config": {
+    "iterations": 538,
+    "depth": 8,
+    "learning_rate": 0.05572196448581401,
+    "l2_leaf_reg": 8.474502019660457,
+    "min_data_in_leaf": 27,
+    "scale_pos_weight": 4.784146402859588,
+    "random_state": 42,
+    "verbose": 0,
+    "allow_writing_files": false
+  },
+  "performance": {
+    "recall": 0.787413467589679,
+    "precision": 0.32146343969991265,
+    "f1": 0.4565423629862074,
+    "roc_auc": 0.7956581694879964
+  },
+  "confusion_matrix": {
+    "TP": 6256,
+    "FP": 13205,
+    "TN": 24807,
+    "FN": 1689
+  },
+  "models_tested": {
+    "baseline": {
+      "recall": 0.7972309628697294,
+      "precision": 0.3176370292362469,
+      "note": "100 iterations with defaults"
+    },
+    "optuna": {
+      "recall": 0.787413467589679,
+      "precision": 0.32146343969991265,
+      "note": "538 iterations, Optuna optimized (SELECTED)"
+    },
+    "hybrid": {
+      "recall": 0.9238514789175583,
+      "precision": 0.2543576948400735,
+      "note": "100 iterations, Optuna params (REJECTED: precision too low)"
+    }
+  },
+  "complete_journey": {
+    "phase1_baseline": 0.21,
+    "phase2_model_selection": 0.734,
+    "phase3_sampling": 0.796,
+    "phase4_feature_selection": 0.797,
+    "phase5_final": 0.787413467589679,
+    "total_improvement": 0.577413467589679
+  },
+  "features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "MentHlth",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "optuna_trials": 100,
+  "best_trial_number": 85
+}
